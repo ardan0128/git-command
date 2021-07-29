@@ -1,0 +1,93 @@
+git 명령어 함께 정리해요
+
+* 주의사항 *
+* 주의사항에 추가하고 싶은게 있으면 언제든지 작성해주세요.
+* 지금은 텍스트 파일에 정리하지만 나중에 "Markdown" 이라는 걸 배우게 되면 변경할 예정입니다.
+* 혹시 명령어 쓰다가 잘못됐거나 추가된게 있으면 수정해서 올려주세요.
+* 한 번이라도 사용된 적이 있다면 명령어를 추가해 주세요.
+
+
+-- 프로젝트에 .git 파일생성
+git init
+
+
+-- 모든 수정된 파일 Stage 하기
+git add -add
+git add .
+
+
+-- 수정된 파일 지정해서 Stage 하기
+git add "파일명"
+
+ex) git add "git-명령어.txt"
+
+
+-- remote 조회하기
+git remote -v
+
+
+-- remote 추가하기
+git remote add remote name repository URL
+
+ex) git remote add origin https://github.com/jortier/im-sprint-simple-git-workflow.git
+* remote name : origin
+* repository URL : 연결할 github 주소
+
+
+-- remote URL 변경
+git remote set-url name repository URL
+
+ex) git remote set-url origin https://github.com/jortier/im-sprint-simple-git-workflow.git
+* remote name : origin
+* repository URL : 연결할 github 주소
+
+
+-- remote 삭제
+git remote remove name
+
+ex) git remote remove origin
+
+
+-- remote에 push 하기
+git push name branch name
+
+ex) git push origin main
+* name : origin
+* branch name : main
+
+
+-- git 상태 확인
+git status
+
+
+-- commit 된 내역 확인
+git log
+
+
+-- branch 생성
+git branch name
+
+ex) git branch main
+* name : main
+
+
+-- branch 조회
+git branch
+
+
+-- branch 이동
+git checkout name
+
+ex) git checkout main
+* name : main
+
+
+-- commit 된 내역을 시각화하여 조회
+git log --graph --all --decorate
+
+
+-- branch 삭제
+git branch -d name
+
+ex) git branch -d main
+* name : main
