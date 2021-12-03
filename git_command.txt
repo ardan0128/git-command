@@ -92,3 +92,6 @@ git branch -d name
 
 ex) git branch -d main
 * name : main
+
+-- remote storage와 local storage 동기화
+git remote prune origin
